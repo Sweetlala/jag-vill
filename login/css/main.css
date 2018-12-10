@@ -9,7 +9,6 @@ body{
    line-height:21px;
    color:#666;
    font-weight:400;
-   
 }
 .tp-caption.rs-caption-1 {
   font-size: 50px!important;
@@ -79,7 +78,6 @@ body{
 .border-color-6 {
   border-color: #a597e7!important;
 }
-
 .promotionWrapper {
   width: 100%;
   background-size: cover;
@@ -94,11 +92,6 @@ body{
 .promotionWrapper .promotionInfo {
   text-align: center;
 }
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-/*#9fccdf!important*/
 .featureSection {
   position: relative;
   font-size: 36px;
@@ -125,12 +118,6 @@ body{
 .sectionTitle h2>span {
   padding: 0 15px;
 }
- 
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
 .media:first-child {
   margin-top: 0;
 }
@@ -151,7 +138,7 @@ body{
 }
 .featuresContent .media-left i {
   width: 62px;
-  height: 62px;
+ height: 62px;
   line-height: 62px;
   border-radius: 100%;
   border: 2px solid #fff;
@@ -164,10 +151,6 @@ body{
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
- 
-/*condition*/
-
-/**/
 .logo{
    border-width:2px;
    border-style:solid;
@@ -195,6 +178,11 @@ body{
 }
 @media screen and (max-width: 600px) {
    .fixed-top {
+     visibility: hidden;
+   }
+ }
+@media screen and (max-width: 600px) {
+   .carousel-indicators {
      visibility: hidden;
    }
  }
