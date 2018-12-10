@@ -29,27 +29,28 @@
 </head>
 
 <body>
+    <!-- COLOR BAR -->
+    <div class="container-fluid color-bar fixed-top clearfix">
+        <div class="row">
+            <div class="col-sm-1 col-xs-2 bg-color-1">fix bar</div>
+            <div class="col-sm-1 col-xs-2 bg-color-2">fix bar</div>
+            <div class="col-sm-1 col-xs-2 bg-color-3">fix bar</div>
+            <div class="col-sm-1 col-xs-2 bg-color-4">fix bar</div>
+            <div class="col-sm-1 col-xs-2 bg-color-5">fix bar</div>
+            <div class="col-sm-1 col-xs-2 bg-color-6">fix bar</div>
+            <div class="col-sm-1 bg-color-1 hidden-xs">fix bar</div>
+            <div class="col-sm-1 bg-color-2 hidden-xs">fix bar</div>
+            <div class="col-sm-1 bg-color-3 hidden-xs">fix bar</div>
+            <div class="col-sm-1 bg-color-4 hidden-xs">fix bar</div>
+            <div class="col-sm-1 bg-color-5 hidden-xs">fix bar</div>
+            <div class="col-sm-1 bg-color-6 hidden-xs">fix bar</div>
+        </div>
+    </div>
+    <!-------------------------->
+
     <!-- Navbar -->
     <div class="mainWrapper">
         <header id="pageTop" class="header-Wrapper">
-            <!-- COLOR BAR -->
-            <div class="container-fluid color-bar top-fixed clearfix">
-                <div class="row">
-                    <div class="col-sm-1 col-xs-2 bg-color-1">fix bar</div>
-                    <div class="col-sm-1 col-xs-2 bg-color-2">fix bar</div>
-                    <div class="col-sm-1 col-xs-2 bg-color-3">fix bar</div>
-                    <div class="col-sm-1 col-xs-2 bg-color-4">fix bar</div>
-                    <div class="col-sm-1 col-xs-2 bg-color-5">fix bar</div>
-                    <div class="col-sm-1 col-xs-2 bg-color-6">fix bar</div>
-                    <div class="col-sm-1 bg-color-1 hidden-xs">fix bar</div>
-                    <div class="col-sm-1 bg-color-2 hidden-xs">fix bar</div>
-                    <div class="col-sm-1 bg-color-3 hidden-xs">fix bar</div>
-                    <div class="col-sm-1 bg-color-4 hidden-xs">fix bar</div>
-                    <div class="col-sm-1 bg-color-5 hidden-xs">fix bar</div>
-                    <div class="col-sm-1 bg-color-6 hidden-xs">fix bar</div>
-                </div>
-            </div>
-            <!-------------------------->
             <nav class="navbar navbar-expand-lg navbar-light text-center" ng-controller="AuthCtrl">
                 <a class="navbar-brand" href="">
                     <img class="logo" src="./img/logo.png" alt="Jag vill">
@@ -70,51 +71,44 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse" id="responsive-nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a href="#!" class="nav-link">
-                                <i class="fa fa-home bg-color-1"></i>
+                            <a href="#!" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-home bg-color-1" aria-hidden="true"></i>
                                 <span class="active color-1">Home</span>
-                                <span class="c1"></span>
                             </a>
                         </li>
                         <li class="nav-item" ng-if="!user">
                             <a href="#!/sign-up" class="nav-link">
                                 <i class="fa fa-unlock-alt bg-color-2"></i>
                                 <span class="color-2">Sign up</span>
-                                <span class="c2"></span>
                             </a>
                         </li>
                         <li class="nav-item" ng-if="!user">
                             <a href="#!/login" class="nav-link">
                                 <i class="fas fa-sign-in-alt bg-color-3"></i>
-                                <span class="color-3">Log in</span>
                             </a>
                         </li>
                         <li class="nav-item" ng-if="user">
                             <a ng-click="signOut()" class="nav-link">
                                 <i class="fas fa-sign-out-alt bg-color-2"></i>
                                 <span class="color-2">Sign Out</span>
-                                <span class="c2"></span>
                             </a>
                         </li>
                         <li class="nav-item" ng-if="user">
                             <a href="#!/school" class="nav-link">
                                 <i class="fas fa-graduation-cap bg-color-3"></i>
                                 <span class="color-3">School</span>
-                                <span class="c3"></span>
                             </a>
                         </li>
                         <li class="nav-item" ng-if="user">
                             <a href="#!/library" class="nav-link">
                                 <i class="fas fa-book-reader bg-color-4"></i>
                                 <span class="color-4">Library</span>
-                                <span class="c4"></span>
                             </a>
                         </li>
                         <li class="nav-item" ng-if="user">
                             <a href="#!/activity" class="nav-link">
                                 <i class="fas fa-child bg-color-5"></i>
                                 <span class="color-5">Activity</span>
-                                <span class="c5"></span>
                             </a>
                         </li>
                         <li class="nav-item" ng-if="user">
@@ -132,43 +126,6 @@
 
     <!-- Angular change -->
     <main ng-view="" class="container-fluid text-center panel panel-default formPanel " style="background-image: url(img/00.png)"></main>
-    <!-------------------------->
-    
-
-    <!-- Footer -->
-    <footer id="footer" class="container-fluid">
-        <div class="container text-center social">
-            <ul>
-                <li>
-                    <a href=" https://www.facebook.com/Helsingborgsstad">
-                        <i class="fab fa-facebook-f bg-color-1"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/helsingborgsstad/">
-                        <i class="fab fa-instagram bg-color-2"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/helsingborg/">
-                        <i class="fab fa-linkedin-in bg-color-3"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/hbgstad">
-                        <i class="fab fa-twitter bg-color-4"></i>
-                    </a>
-                </li>
-            </ul>
-            <p>&copy; All rights reserved. Designed by
-                <span class="color-4">R</span>
-                <span class="color-4">
-                    <i class="far fa-grin-wink"></i>
-                </span>
-                <span class="color-4">S</span>
-            </p>
-        </div>
-    </footer>
     <!-------------------------->
 
     <!--Angular Javascript files -->
