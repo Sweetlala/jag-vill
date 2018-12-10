@@ -1,0 +1,33 @@
+<h1>Weclome in Helsingborg City</h1>
+<div class="container">
+    <form class="form-inline " ng-submit="skol(omrade1,skoltyp)" id="search">
+        <div class="form-group">
+        <input id="omrade" class="form-control" placeholder="chose your place" ng-model="omrade1">
+        <label id="skol">
+            <select name="skoltyp" id="skoltyp" class="form-control" ng-model="skoltyp">
+                <option value="">vilja skoltyp</option>
+                <option>Förskola</option>
+                <option>Grundskola</option>
+                <option>Gymnasieskola</option>
+                <option>Särskola</option>
+            </select>
+        </label>
+    </div>
+    <!--<select name="skoltyp" id="skoltyp" class="form-control" ng-model="omrade1">
+        <option value="">vilja område</option>
+        <option>Ramlösa</option>
+        <option>Gustavslund</option>
+        <option>Tågaborg S</option>
+        <option>Dalhem</option>
+        <option>Råå</option>
+        <option>Norr</option>
+        <option>Rosengården</option>
+        <option>Raus</option>
+        <option>Rosengården</option>
+        <option>Rosengården</option>
+    </select>-->
+        
+        
+        <button type="submit" class="btn btn-primary">search</button>
+    </form>
+</div>

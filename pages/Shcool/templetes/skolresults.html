@@ -1,0 +1,49 @@
+<section>
+    <div class="row table_container">
+        <table class="table table-bordered table-hover" >
+            <thead class="thead">
+                <tr class="lightblue">
+                    <th scope="col">
+                        <h3>skolname </h3>
+                    </th>
+                    <th scope="col">
+                        <h3> skoltyp </h3>
+                    </th>
+                    <th scope="col">
+                        <h3>huvodnamn</h3>
+                    </th>
+                    <th scope="col">
+                        <h3>adress</h3>
+                    </th>
+                    <th scope="col">
+                        <h3>url</h3>
+                    </th>
+
+                </tr>
+            </thead>
+
+            <tbody ng-repeat="resa in resor">
+
+                <tr class="bg-light">
+
+                    <td>
+                        <h3> {{resa.fields.namn}}</h3>
+                    </td>
+                    <td>
+                        <h3>{{resa.fields.skoltyp}}</h3>
+                    </td>
+                    <td>
+                        <h3>{{resa.fields.huvudman}}</h3>
+                    </td>
+                    <td>
+                        <h3>{{resa.fields.gatuadress}}</h3>
+                    </td>
+                    <td><a href="{{resa.fields.url}}">{{resa.fields.url}}</a> </td>
+
+                </tr>
+            </tbody>
+
+            
+        </table>
+    </div>
+</section>
