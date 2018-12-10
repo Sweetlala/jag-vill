@@ -26,6 +26,10 @@ app.config(function($routeProvider){
         templateUrl: 'templates/activity.html',
         controller: 'ActivityController'
     })
+    .when('/activity-results/:adress', {
+        templateUrl: 'templetes/activity-results.html',
+        controller: 'ActivityResultsController'
+    })
     .when('/museum', {
         templateUrl: 'templates/museum.html',
         controller: 'MuseumController'
