@@ -15,12 +15,20 @@ app.config(function($routeProvider){
         controller: 'LoginController'
     })
     .when('/school', {
-        templateUrl: 'templates/school.html',
+        templateUrl: 'templetes/school.html',
         controller: 'SchoolController'
     })
+   .when('/school-results/:adress', { 
+        templateUrl: 'templetes/school-results.html',
+        controller: 'SchoolResultsController'
+    })
     .when('/library', {
-        templateUrl: 'templates/library.html',
+        templateUrl: 'templetes/library.html',
         controller: 'LibraryController'
+    })
+   .when('/library-results/:adress', {
+        templateUrl: 'templetes/library-results.html',
+        controller: 'LibraryResultsController'
     })
     .when('/activity', {
         templateUrl: 'templates/activity.html',
@@ -31,7 +39,11 @@ app.config(function($routeProvider){
         controller: 'ActivityResultsController'
     })
     .when('/museum', {
-        templateUrl: 'templates/museum.html',
+        templateUrl: 'templetes/museum.html',
         controller: 'MuseumController'
+    })
+   .when('/museum-results/:adress', {
+        templateUrl: 'templetes/museum-results.html',
+        controller: 'MuseumResultsController'
     });
 });
