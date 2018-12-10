@@ -64,6 +64,13 @@ body{
 .border-color-4 {
   border-color: #A80171!important;
 }
+.border-color-5 {
+  border-color: #1599FC!important;
+}
+.border-color-6 {
+  border-color: #a597e7!important;
+}
+
 .promotionWrapper {
   width: 100%;
   background-size: cover;
